@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="catalog.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="app">
+        <div class="card">
+            <h2>Product Catalog</h2>
+            <p>Total Products: <span id="totalCount">0</span></p>
+
+            <div class="input-group">
+                <input type="text" id="searchInput" placeholder="Search by Product ID">
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="deleteInput" placeholder="Delete by Product ID">
+                <button id="deleteBtn">Delete</button>
+            </div>
+
+            <div id="productList" class="product-list"></div>
+        </div>
+    </div>
+
+    <script src="catalog.js"></script>
+</body>
+</html>

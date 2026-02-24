@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 95%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+    color: #0f172a;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #3b82f6, #6366f1);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.card {
+    margin-top: 25px;
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    position: relative;
+}
+
+/* Modern Gradient Border */
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1.5px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #6366f1, #3b82f6);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.user {
+    padding: 8px 0;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 14px;
+    color: #334155;
+}
+
+.user:last-child {
+    border-bottom: none;
+}
+
+.error {
+    color: #dc2626;
+    font-weight: 500;
+}

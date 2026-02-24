@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mini University Portal</title>
+<link rel="stylesheet" href="portal.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="app">
+    <div class="card">
+        <h2>Mini University Portal</h2>
+
+        <div class="input-group">
+            <input type="text" id="studentName" placeholder="Student Name">
+            <input type="number" id="studentId" placeholder="Student ID">
+            <button id="addStudentBtn">Add Student</button>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="courseInput" placeholder="Add Course">
+            <button id="addCourseBtn">Add Course</button>
+        </div>
+
+        <button id="saveBtn">Save Data</button>
+
+        <div id="studentList" class="student-list"></div>
+    </div>
+</div>
+
+<script src="portal.js"></script>
+</body>
+</html>

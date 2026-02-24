@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 95%;
+    max-width: 500px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e5e7eb;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #111827;
+}
+
+.student-item {
+    padding: 10px;
+    border: 1px solid #f1f1f1;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
